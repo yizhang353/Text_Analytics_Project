@@ -335,11 +335,8 @@ shinyServer(function(input, output) {
             coord_flip()
     })    
     
-    #Twitter
-    consumer_key <- '(you would use your own twitter developer account information here)'
-    consumer_secret <- '(you would use your own twitter developer account information here)'
-    access_token <- '(you would use your own twitter developer account information here)'
-    access_secret <- '(you would use your own twitter developer account information here)'
+    ##Import your own Twitter's key from Developer account (consumer_key, consumer_secret, access_token, access_secret)
+   
     
     setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
     airpod_twitter <- twitteR::searchTwitter('#AirPods + #Poor', n = 1000, since = '2015-06-01', retryOnRateLimit = 1e3)
